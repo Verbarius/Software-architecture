@@ -6,8 +6,8 @@ from gallow_play import Gallow, word_for_guess
 class TestGame(unittest.TestCase):
 
     def test_file(self):
-        with open('gallow_play/words_.txt', 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+        with open('gallow_play/words_.txt', 'r', encoding='utf-8') as file:
+            lines = file.readlines()
         word = word_for_guess()
         self.assertEqual(word in lines, True)
 

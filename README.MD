@@ -13,7 +13,7 @@ git clone https://github.com/Verbarius/Software-architecture
 Go to the repo and write  
 
 ```
-python3 ./gallow.py
+python3 ./main.py
 ```
 
 ## The process of play

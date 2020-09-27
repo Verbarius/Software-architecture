@@ -2,9 +2,9 @@ import random
 
 
 def word_for_guess():
-        with open('gallow_play/words_.txt', 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-        return lines[random.randint(0, len(lines) - 1)]
+    with open('gallow_play/words_.txt', 'r', encoding='utf-8') as file:
+        lines = file.readlines()
+    return lines[random.randint(0, len(lines) - 1)]
 
 class Gallow:
 
@@ -13,15 +13,11 @@ class Gallow:
         self.mistakes = 0
         self.guessed = ['*' for _ in range(len(self.word))]
         self.misses = []
-        
-
-    def get_input(self):
-        return input('Guess a letter: \n')
 
     def decision(self, letter):
         if len(letter) > 1 or not letter.isalpha():
-                print()
-                print('It`s not a letter. Try again!')
+            print()
+            print('It`s not a letter. Try again!')
         elif letter in self.guessed:
             print('This letter was guessed.')
         elif letter in self.misses:
@@ -44,7 +40,7 @@ class Gallow:
     def gallow(self):
         print(self.word)
         while (self.mistakes < len(self.word)) and ('*' in self.guessed):
-            letter = self.get_input()
+            letter = input('Guess a letter: \n')
             self.decision(letter)
         if self.mistakes < len(self.word):
             print('You won!')
