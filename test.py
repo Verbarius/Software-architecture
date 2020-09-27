@@ -1,7 +1,6 @@
 import unittest
 from gallow_play import Gallow, word_for_guess
 
-
 class TestGame(unittest.TestCase):
 
     def test_file(self):
