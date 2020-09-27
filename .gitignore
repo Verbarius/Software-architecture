@@ -1,0 +1,4 @@
+.vscode
+__pycache__/
+gallow_play/__pycache__/
+tests/__pycache__/
