@@ -1,5 +1,8 @@
 # The project "gallow"
 
+[![Build Status][travis-badge]][travis-url]
+[![Coverage][coverage-image]][coverage-url]
+
 It's a pleasnt play for you and your friends.
 
 ## Downloading and starting
@@ -41,3 +44,8 @@ Misses: y, k, a
 At the end you will get an inscription with you result.
 
 ### Have a good play!
+
+[travis-url]: https://travis-ci.com/github/Verbarius/Software-architecture
+[travis-badge]: https://travis-ci.com/Verbarius/Software-architecture.svg?branch=master
+[coverage-image]: https://codecov.io/gh/Verbarius/Software-architecture/branch/master/graph/badge.svg
+[coverage-url]: https://codecov.io/gh/Verbarius/Software-architecture
