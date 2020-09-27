@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import patch
 from gallow_play import Gallow, word_for_guess
 
 
