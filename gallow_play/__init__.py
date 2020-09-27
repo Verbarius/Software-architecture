@@ -1,1 +1,1 @@
-from ._gallow import gallow, word_for_guess
+from ._gallow import Gallow, word_for_guess

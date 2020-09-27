@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 """Setup script."""
@@ -37,4 +36,3 @@ setup(
         "Programming Language :: Python :: 3",
     ]
 )
-
